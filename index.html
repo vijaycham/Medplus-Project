@@ -5,30 +5,83 @@
   <link rel="stylesheet" href="style.css">
 <style>
   body {
+    font-family: arial;
     background-image: url(Images/Background.png);
     background-size: cover; 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    margin: 0px;
   }
   .intro-container{
     display: flex;
     flex-direction: row;
-    column-gap: 10px;
+    column-gap: 20px;
   }
    .intro-content {
     flex-grow: 1;
    }
    .Heading {
     width: 400px;
-    font-size: xx-large;
-    
+    font-size: 50px;
+    color: rgb(0, 100, 75);
+   }
+   .intro-text{
+     font-size: 20px;
+     color: rgb(0, 100, 75);
+   }
+   .appoinment-button{
+    color: white ;
+    background-color: rgb(0, 100, 75);
+    border: none;
+    padding: 15px 40px;
+    font-size: 15px;
+    margin-right: 2px;
+   }
+   .register-button{
+    color: rgb(0, 100, 75) ;
+    background-color: rgb(204, 245, 235);
+    border-color: rgb(0, 100, 75);
+    padding: 15px 40px;
+    font-size: 15px;
    }
    .intro-nurse{
     flex-grow:1 ;
    }
    .nurse{
     width: 600px;
+   }
+   .middle-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+   }
+   .who-text{
+    color: rgb(0, 100, 75);
+    font-size: 35px;
+    margin-top:15px;
+    margin-bottom: 0px;
+   }
+   .health-text {
+    margin-top: 8px;
+    font-size: 22px;
+    color: rgb(0, 100, 75);
+    margin-bottom: 0px;
+    }
+   .trust-text{
+    margin-top:0px;
+    font-size: 17px;
+    color:rgb(119, 125, 129) ;
+   } 
+   .facilities{
+    display: flex;
+    gap: 10px;
+   }
+   .middle-card{
+    border: 10px;
+    color: green;
    }
 </style>
 
@@ -43,13 +96,34 @@
     <div class="intro-container">
       <div class="intro-content">
         <h1 class="Heading">Your Loved Ones Deserve Only The Best.</h1>
-        <p>In today's fast-paced world, it is crucial to prioritize our health and well-being. Our society is the cornerstone of our collective strength, and taking care of our physical and mental health is essential for the overall progress and happiness of everyone. Investing in our health means not only leading an active lifestyle but also making informed choices about our nutrition, sleep, and stress management. It is important to cultivate a culture of preventive care, emphasizing regular check-ups, screenings, and maintaining a healthy work-life balance.</p>
+        <p class="intro-text">In today's fast-paced world, it is crucial to prioritize our health and well-being. Our society is the cornerstone of our collective strength, and taking care of our physical and mental health is essential for the overall progress and happiness of everyone. Investing in our health means not only leading an active lifestyle but also making informed choices about our nutrition, sleep, and stress management. It is important to cultivate a culture of preventive care, emphasizing regular check-ups, screenings, and maintaining a healthy work-life balance.</p>
+        <button class="appoinment-button">Book an Appoinment</button>
+        <button class="register-button">Register Now </button>
       </div>
       <div class="intro-nurse">
         <img class="nurse" src="Doctors/nurse.png">
       </div>
     </div>
-    
+    <div class="middle-text">
+      <p class="who-text">WHO Certified Hospital</p> 
+      <p class="health-text">We care your health</p>
+      <p class="trust-text">We care your trust</p>
+    </div>
+    <div class="facilities">
+      <div class="middle-card">
+        <p>
+          Experienced Qualified Specialists</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iure consectetur illum dolorem exercitationem, ducimus hic tempore harum minus necessitatibus veritatis, quod iste voluptatibus reiciendis vero corporis minima quae quia?</p>
+      </div>
+      <div class="middle-card">
+        <p>Detailed Prescription</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iure consectetur illum dolorem exercitationem, ducimus hic tempore harum minus necessitatibus veritatis, quod iste voluptatibus reiciendis vero corporis minima quae quia?</p>
+      </div>
+      <div class="middle-card">
+        <p>Guaranteed Treatment</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iure consectetur illum dolorem exercitationem, ducimus hic tempore harum minus necessitatibus veritatis, quod iste voluptatibus reiciendis vero corporis minima quae quia?</p>
+      </div>
+    </div>
    </main>            
   </body>
 </html>
